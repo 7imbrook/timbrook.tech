@@ -1,23 +1,16 @@
 import React from "react";
-import { Link, Route, Routes } from "react-router-dom";
-
-function About() {
-  return <article>Let me deploy your shit</article>;
-}
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./Home";
 
 function App() {
   return (
-    <div>
-      <header>
-        Michael Timbrook <sub>Software Engineer</sub>
-        <article>
-          No links, <Link to="/about">Hire me.</Link>
-        </article>
+    <React.StrictMode>
+      <BrowserRouter>
         <Routes>
-          <Route path="/about" element={<About />} />
+          <Route path="/*" element={<Home />} />
         </Routes>
-      </header>
-    </div>
+      </BrowserRouter>
+    </React.StrictMode>
   );
 }
 
