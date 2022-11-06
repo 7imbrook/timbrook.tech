@@ -1,5 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, Route, Routes } from "react-router-dom";
+
+function About() {
+  return <article>Let me deploy your shit</article>;
+}
 
 function App() {
   return (
@@ -7,8 +11,11 @@ function App() {
       <header>
         Michael Timbrook <sub>Software Engineer</sub>
         <article>
-          No links, only <Link to="/about">vibes.</Link>
+          No links, <Link to="/about">Hire me.</Link>
         </article>
+        <Routes>
+          <Route path="/about" element={<About />} />
+        </Routes>
       </header>
     </div>
   );
