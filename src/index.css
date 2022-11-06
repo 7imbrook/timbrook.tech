@@ -11,3 +11,38 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+body {
+  text-align: center;
+  color: white;
+  background-color: #282c34;
+}
+
+header>* {
+  letter-spacing: normal;
+}
+
+a {
+  color: beige;
+}
+
+header {
+  letter-spacing: 5px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(56px + 2vmin);
+}
+
+sub {
+  font-size: calc(24px + 2vmin);
+  font-weight: lighter;
+}
+
+article {
+  padding-top: 1.2ch;
+  font-size: calc(9px + 2vmin);
+  font-style: italic;
+}

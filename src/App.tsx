@@ -1,12 +1,14 @@
 import React from "react";
-import "./App.css";
+import { Link } from "react-router-dom";
 
 function App() {
   return (
     <div>
       <header>
         Michael Timbrook <sub>Software Engineer</sub>
-        <article>No links, only vibes.</article>
+        <article>
+          No links, only <Link to="/about">vibes.</Link>
+        </article>
       </header>
     </div>
   );
