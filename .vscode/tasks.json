@@ -9,6 +9,12 @@
 			],
 			"label": "npm: start",
 			"detail": "react-scripts start"
+		},
+		{
+			"type": "shell",
+			"label": "Deploy Infrastructor",
+			"group": "build",
+			"command": "make terraform",
 		}
 	]
 }
