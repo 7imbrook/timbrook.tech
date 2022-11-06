@@ -12,7 +12,15 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />} />
+        <Route index element={<App />} />
+        <Route
+          path="*"
+          element={
+            <header>
+              <code>404</code>
+            </header>
+          }
+        />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
