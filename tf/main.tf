@@ -18,9 +18,10 @@ resource "digitalocean_app" "site" {
     region = "sfo"
 
     static_site {
-      name          = "static"
-      build_command = "npm run build"
-      output_dir    = "/build"
+      name              = "static"
+      build_command     = "npm run build"
+      output_dir        = "/build"
+      catchall_document = "index.html"
       git {
         repo_clone_url = "https://github.com/7imbrook/timbrook.tech"
         branch         = "main"
