@@ -14,7 +14,8 @@ function About() {
         and developer experience.
       </article>
       <article className="about">
-        On my own I run a home networks with 5 rpis + proxmox vm.
+        On my own I run a home network with 5 rpis + proxmox vm running
+        everything from qemu to nomad and k8s.
       </article>
       <article className="about">
         If it's not being continually built and released is it even real
