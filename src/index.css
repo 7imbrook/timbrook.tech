@@ -16,6 +16,17 @@ body {
   text-align: center;
   color: white;
   background-color: #282c34;
+  animation: 2s fadeIn;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 header>* {
@@ -43,7 +54,14 @@ sub {
 }
 
 article {
-  padding-top: 1.2ch;
+  margin-top: 1.2ch;
   font-size: calc(9px + 2vmin);
   font-style: italic;
+}
+
+article.about {
+  font-size: calc(3px + 2vmin);
+  padding: 25px;
+  border-radius: 15px;
+  background-color: #3e4146;
 }
