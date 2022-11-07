@@ -54,14 +54,17 @@ sub {
 }
 
 article {
-  margin-top: 1.2ch;
+  margin-top: 1.6ch;
   font-size: calc(9px + 2vmin);
   font-style: italic;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 article.about {
-  font-size: calc(3px + 2vmin);
-  padding: 25px;
+  font-size: calc(8px + 2vmin);
+  padding: 15px;
   border-radius: 15px;
   background-color: #3e4146;
+  max-width: 650px;
 }

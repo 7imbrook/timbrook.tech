@@ -1,29 +1,6 @@
 import React from "react";
 import { Link, Route, Routes } from "react-router-dom";
-
-function useYearsAtCompany() {
-  return 5;
-}
-
-function About() {
-  const yearsAtIG = useYearsAtCompany();
-  return (
-    <>
-      <article className="about">
-        I've been and engineer at Instagram for {yearsAtIG} years doing release
-        and developer experience.
-      </article>
-      <article className="about">
-        On my own I run a home network with 5 rpis + proxmox vm running
-        everything from qemu to nomad and k8s.
-      </article>
-      <article className="about">
-        If it's not being continually built and released is it even real
-        anymore?
-      </article>
-    </>
-  );
-}
+import About from "./About";
 
 function Home() {
   return (
