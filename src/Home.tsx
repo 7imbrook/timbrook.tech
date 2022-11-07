@@ -14,6 +14,9 @@ function Home() {
           <Route path="/about" element={<About />} />
         </Routes>
       </header>
+      <footer>
+        Email: <a href="mailto:timbrook480@gmail.com">timbrook480@gmail.com</a>
+      </footer>
     </div>
   );
 }
