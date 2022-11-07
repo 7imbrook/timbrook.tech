@@ -9,7 +9,7 @@ function About() {
   return (
     <>
       <article className="about">
-        I've been and engineer at Instagram for {yearsAtIG} years doing release
+        I've been an engineer at Instagram for {yearsAtIG} years doing release
         and developer experience.
       </article>
       <article className="about">
