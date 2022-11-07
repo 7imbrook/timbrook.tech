@@ -1,0 +1,16 @@
+name: Release static site
+on:
+  push:
+    branches:
+      - "main"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+     -  uses: actions/checkout@v3
+     -  name: DigitalOcean App Platform deployment
+        uses: digitalocean/app_action@main
+        with:
+          app_name: personal-site-timbrook-tech
+          token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
