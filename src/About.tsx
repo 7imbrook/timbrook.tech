@@ -22,6 +22,12 @@ function About() {
         anymore?
       </article>
       <article className="about">
+        "Working with Michael has also helped me become more confident in 
+        working in areas I'm not super familiar with. Hearing how he iterates
+        and takes on work that he has less/no experience in and how he approaches 
+        that has really helped me when I face similar situations." ~My Team
+      </article>
+      <article className="about">
         The resume is coming, for now just lots of blurbs.
       </article>
       <article className="about">
