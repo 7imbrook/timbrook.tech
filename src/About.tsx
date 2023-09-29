@@ -34,9 +34,6 @@ function About() {
         that has really helped me when I face similar situations." ~My Team
       </article>
       <article className="about">
-        The resume is coming, for now just lots of blurbs.
-      </article>
-      <article className="about">
         Here's my <a href="https://github.com/7imbrook">GitHub</a>
       </article>
     </>
