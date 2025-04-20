@@ -16,7 +16,7 @@ jobs:
       - name: Install dependencies
         run: npm install --frozen-lockfile
       - name: Build docusaurus site
-        run: npm build
+        run: npm run build
       - name: Upload
         uses: actions/upload-pages-artifact@v3
         with:
