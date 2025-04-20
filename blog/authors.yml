@@ -1,6 +1,6 @@
 timbrook:
   name: Michael Timbrook
   url: https://timbrook.tech
-  image_url: img/headshot.jpg
+  image_url: /img/headshot.jpg
   socials:
     github: 7imbrook
