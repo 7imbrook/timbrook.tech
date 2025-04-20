@@ -26,3 +26,6 @@ yarn-error.log*
 tf/.terraform
 *.tfstate
 *.tfstate.backup
+/blog/.obsidian
+/.docusaurus
+/.vscode
