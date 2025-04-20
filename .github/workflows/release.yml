@@ -1,16 +1,23 @@
-name: Release static site
+name: Publish to github pages
 on:
   push:
     branches:
       - "main"
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
-     -  uses: actions/checkout@v3
-     -  name: DigitalOcean App Platform deployment
-        uses: digitalocean/app_action@main
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v4
         with:
-          app_name: personal-site-timbrook-tech
-          token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
+          node-version: 22
+          cache: yarn
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+      - name: Build docusaurus site
+        run: yarn build
+      - name: Upload
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: build
