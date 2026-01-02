@@ -11,7 +11,7 @@ export default function Home(): ReactNode {
       <title>{siteConfig.title}</title>
       <div className={styles.main}>
         <header className={styles.header}>
-          Michael Timbrook <sub className={styles.sub}>Software Engineer</sub>
+          Timbrook <sub className={styles.sub}>Software Engineer</sub>
           <article className={styles.article}>
             <Link className={styles.link} to={'blog'}>...read more</Link>
           </article>
